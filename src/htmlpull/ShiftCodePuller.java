@@ -138,6 +138,7 @@ public class ShiftCodePuller {
 		
 		//Configure frame
 		WindowsListen wlisten = new WindowsListen(tmodel);
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		frame.addWindowListener(wlisten);
 		frame.setJMenuBar(bar);
 		frame.add(scrollPane);
