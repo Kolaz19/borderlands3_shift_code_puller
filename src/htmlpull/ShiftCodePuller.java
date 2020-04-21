@@ -133,7 +133,11 @@ public class ShiftCodePuller {
 		if (icon.exists()) {
 		frame.setIconImage(ImageIO.read(new File("icon.png")));
 		} else {
-		frame.setIconImage(ImageIO.read(new URL("https://www.seekpng.com/png/full/148-1486747_borderlands-symbol-borderlands-symbols-tattoo-ideas-borderlands-vault.png")));
+			try {
+		frame.setIconImage(ImageIO.read(new URL("https://www.bilder-upload.eu/upload/f3d00c-1587461747.png")));
+			}catch(Throwable e) {
+				//no exception
+			}
 		}
 		
 		//Configure frame
